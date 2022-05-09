@@ -2,6 +2,7 @@
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 # curtana: V14.0.4.0.SJWMIXM (CURTANAGlobal)
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
+# cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
 
 # ACDB
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -84,6 +85,10 @@ vendor/lib/libsurround_3mic_proc.so
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+
+# Audio (Spatial audio) - from cheetah
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
 
 # Battery
 vendor/bin/batterysecret
