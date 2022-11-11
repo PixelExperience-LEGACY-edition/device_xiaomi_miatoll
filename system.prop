@@ -45,6 +45,9 @@ ro.miui.build.region=in
 ro.miui.notch=1
 ro.product.mod_device=_global
 
+# RenderAdd commentMore actions
+debug.cpurend.vsync=false
+
 # WFD
 persist.debug.wfd.enable=1
 vendor.sys.video.disable.ubwc=1
