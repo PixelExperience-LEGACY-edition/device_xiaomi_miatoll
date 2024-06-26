@@ -501,11 +501,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,thermal_hal_feature,pid,apply_1_0)
 
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.pixel \
-    thermal_symlinks
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+    android.hardware.thermal-service.qti
 
 # TimeKeep
 PRODUCT_PACKAGES += \
