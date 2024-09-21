@@ -69,6 +69,21 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# Camera (MiuiCamera)
+# Priv-app permission
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/miuicamera/privapp-permissions-miui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miui.xml
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/miuicamera/miuicamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
+# Camera (shims for MiuiCamera)
+PRODUCT_PACKAGES += \
+    libgui_shim_miuicamera
+TARGET_USES_MIUI_CAMERA := true
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    MiuiCamera
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 

@@ -79,6 +79,14 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
+        # Miui Camera
+        system/priv-app/MiuiCamera/MiuiCamera.apk)
+            split --bytes=49M -d "$2" "$2".part
+            ;;
+        # fixup! Stub out usage of onBufferDetached
+        system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
+            "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
+            ;;
     esac
 }
 
