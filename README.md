@@ -1,4 +1,4 @@
-# Common device tree for Xiaomi SM6250 devices
+# Device tree for Xiaomi SD720G devices
 
 ```
 #
