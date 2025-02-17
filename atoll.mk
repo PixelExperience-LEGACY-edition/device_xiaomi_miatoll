@@ -68,6 +68,9 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# Camera (Shim MiuiCamera libs)
+PRODUCT_PACKAGES += libgui_shim_miuicamera
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
