@@ -257,7 +257,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2 \
     debug.stagefright.ccodec=4 \
-    debug.stagefright.omx_default_rank=512
+    debug.stagefright.omx_default_rank=0
 # Transcoding related property.
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.transcoding.codec_max_operating_rate_720P=480 \
