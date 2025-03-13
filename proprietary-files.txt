@@ -84,6 +84,8 @@ vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
+system_ext/framework/audiosphere.jar
+system_ext/etc/permissions/audiosphere.xml
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
