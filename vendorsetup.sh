@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# MiuiCamera (merging)
-cat vendor/xiaomi/miatoll/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part* > vendor/xiaomi/miatoll/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
-
 # Clang
 CLANG_PATH="prebuilts/clang/host/linux-x86/clang-latest" # Define clang path
 CLANG_URL="https://github.com/userariii/clang-19_r-530567/releases/download/clang-r530567/clang-r530567.tar.gz" # Define clang URL
