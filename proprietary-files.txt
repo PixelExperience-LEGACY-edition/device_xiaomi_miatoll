@@ -477,7 +477,7 @@ vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Consumerir
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.atoll.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.atoll.so;FIX_SONAME|bb96104803e2468d7982e6955dad14e6bd739939|4d3bf55dedd4f20a0ee933be672d4004e08b42ec
 
 # CVP
 vendor/lib64/libcvp.so
