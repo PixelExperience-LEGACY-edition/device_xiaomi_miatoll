@@ -757,6 +757,12 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
+# libprotobuf
+vendor/lib/libprotobuf-cpp-full-3.9.1.so:vendor/lib/libprotobuf-cpp-full-3.9.1-vendorcompat.so;FIX_SONAME
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so:vendor/lib/libprotobuf-cpp-lite-3.9.1-vendorcompat.so;FIX_SONAME
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so:vendor/lib64/libprotobuf-cpp-full-3.9.1-vendorcompat.so;FIX_SONAME
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:vendor/lib64/libprotobuf-cpp-lite-3.9.1-vendorcompat.so;FIX_SONAME
+
 # Listen
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2svarnn.so
