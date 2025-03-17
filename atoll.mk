@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# Camera Provider
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.camera.device@1.0.vendor
+
 # Camera (Shim MiuiCamera libs)
 PRODUCT_PACKAGES += libgui_shim_miuicamera
 
@@ -139,7 +143,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    vendor.qti.hardware.fm@1.0.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
