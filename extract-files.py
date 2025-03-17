@@ -134,6 +134,16 @@ blob_fixups: blob_fixups_user_type = {
         .patchelf_version('0_17_2')
         .add_needed('libgui_shim_miuicamera.so'),
     ### Miui Camera fix End ###
+    ('vendor/lib/libcamera_nn_stub.so','vendor/lib64/libcamera_nn_stub.so','vendor/lib64/camera/components/com.qti.camx.chiiqutils.so',
+    'vendor/lib64/camera/components/com.qti.node.eisv2.so','vendor/lib64/camera/components/com.qti.node.eisv3.so','vendor/lib64/hw/camera.qcom.so',
+    'vendor/lib64/libril-qc-hal-qmi.so','vendor/lib64/libsettings.so','vendor/lib64/unnhal-acc-adreno.so',
+    'vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti'): blob_fixup()
+        .remove_needed('libprotobuf-cpp-full-3.9.1.so')
+        .add_needed('libprotobuf-cpp-full-3.9.1-vendorcompat.so'),
+    ('vendor/lib/libsnsapi.so','vendor/lib64/libsnsapi.so','vendor/lib64/libsnsdiaglog.so','vendor/lib64/libssc.so',
+    'vendor/lib64/libwvhidl.so','vendor/lib64/sensors.ssc.so','vendor/bin/sensors.qti'): blob_fixup()
+        .remove_needed('libprotobuf-cpp-lite-3.9.1.so')
+        .add_needed('libprotobuf-cpp-lite-3.9.1-vendorcompat.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
