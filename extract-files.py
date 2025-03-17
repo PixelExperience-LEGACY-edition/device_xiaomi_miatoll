@@ -58,7 +58,17 @@ lib_fixups: lib_fixups_user_type = {
     'libarcsoft_portrait_lighting_c',
     ): lib_fixup_vendor_suffix,
     (
-
+    'libOmxCore',
+    'libcld80211',
+    'libdisplaydebug',
+    'libdrmutils',
+    'libgrallocutils',
+    'libjson',
+    'libqti_vndfwk_detect',
+    'libril',
+    'libsdmutils',
+    'libwfdaac_vendor',
+    'libwpa_client',
     ): lib_fixup_remove,
 }
 
