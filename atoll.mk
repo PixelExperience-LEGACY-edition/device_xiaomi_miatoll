@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/miuicamera/privapp-permissions-miui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miui.xml \
     $(LOCAL_PATH)/miuicamera/miuicamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
 
+# Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
