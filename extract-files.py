@@ -144,6 +144,13 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libwvhidl.so','vendor/lib64/sensors.ssc.so','vendor/bin/sensors.qti'): blob_fixup()
         .remove_needed('libprotobuf-cpp-lite-3.9.1.so')
         .add_needed('libprotobuf-cpp-lite-3.9.1-vendorcompat.so'),
+    ### Dolby Codec2 (rhodei) Start ###
+    ('vendor/bin/hw/vendor.dolby.media.c2@1.0-service', 'vendor/lib64/libcodec2_soft_ac4dec.so',
+    'vendor/lib64/libcodec2_soft_ddpdec.so', 'vendor/lib64/libdeccfg.so'): blob_fixup()
+        .replace_needed('libdapparamstorage.so', 'libdapparamstorage-v33_rhodei.so')
+        .replace_needed('"libstagefright_foundation.so', 'libstagefright_foundation-v33_rhodei.so')
+        .replace_needed('vendor.dolby.hardware.dms@2.0.so', 'vendor.dolby.hardware.dms@2.0-v33_rhodei.so'),
+    ### Dolby Codec2 (rhodei) End ###
 }  # fmt: skip
 
 module = ExtractUtilsModule(
