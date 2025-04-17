@@ -27,6 +27,11 @@
 <audio_platform_configuration>
     <usecase_attr>
         <!-- for output with flag AUDIO_OUTPUT_SPATIALIZER -->
-        <usecase id="UC_IMMERSIVE_PLAYBACK" dev1="3"/>
+        <usecase id="UC_IMMERSIVE_PLAYBACK" dev1="30" dyn_path="true" dsp_vol="false" mmap="false" period="10" period_num="3"/>
     </usecase_attr>
+    <dsp_latency>
+        <usecase id="UC_IMMERSIVE_PLAYBACK" type="playback">
+            <be_cfg be_id="OUT_A2DP_BE_CFG" latency="100000"/>
+        </usecase>
+    </dsp_latency>
 </audio_platform_configuration>

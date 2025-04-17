@@ -1,6 +1,6 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 # OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
-# cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
+# oriole_beta: user-VanillaIceCream-AP31.240119.016-11414567-release-keys
 # curtana: V14.0.4.0.SJWMIXM (CURTANAGlobal)
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
 # rhodei: user-13-T1SSIS33.1-75-7-1-7a305a-release-keys
@@ -109,7 +109,7 @@ system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
-# Audio (Spatial audio) - from cheetah
+# Audio (Spatial audio) - from oriole_beta
 vendor/lib/soundfx/libspatialaudio.so
 vendor/lib64/soundfx/libspatialaudio.so
 
