@@ -1,8 +1,11 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
+# OnePlus9R: RKQ1.201112.002 (OnePlus9R_IND)
 # cheetah: cheetah-user-15-AP3A.241005.015-12366759-release-keys
 # curtana: V14.0.4.0.SJWMIXM (CURTANAGlobal)
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
+# rtwo: user-13-T1TR33.43-20-28-8fa75-release-keys
 # sunfish: sunfish-userdebug-13-TQ3A.230805.001.S2-12655424-dev-keys
+# sweet: V816.0.9.0.THGTRXM (SWEETGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # Current blobs with ELF checks disabled, some libs are built from a gnu makefile target:
@@ -499,6 +502,48 @@ vendor/lib64/libcvp.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+
+# Dolby (Equalizer) - from OP9R
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswdap.so
+
+# Dolby (Equalizer) - from sweet
+vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libswvqe.so
+
+# Dolby (Service point) - from OP9R
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/lib/vendor.dolby.hardware.dms@2.0.so:vendor/lib/vendor.dolby.hardware.dms@2.0_OP.so;FIX_SONAME
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:vendor/lib64/vendor.dolby.hardware.dms@2.0-impl_OP.so;FIX_SONAME
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so:vendor/lib64/vendor.dolby.hardware.dms@2.0_OP.so;FIX_SONAME
+
+# Dolby (Dependency of Service point & Equalizer) - from sweet
+system/system/lib/libstagefright_foundation.so:vendor/lib/libstagefright_foundation_sweet.so;FIX_SONAME
+system/system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_foundation_sweet.so;FIX_SONAME
+vendor/lib/libdapparamstorage.so:vendor/lib/libdapparamstorage_sweet.so;FIX_SONAME
+vendor/lib64/libdapparamstorage.so:vendor/lib64/libdapparamstorage_sweet.so;FIX_SONAME
+vendor/lib64/libdlbdsservice.so:vendor/lib64/libdlbdsservice_sweet.so;FIX_SONAME
+
+# Dolby (Equalizer) - from rtwo
+vendor/lib/soundfx/libdlbvol.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libswgamedap.so
+
+# Dolby (Equalizer dependency) - from rtwo
+system/system/lib/libstagefright_foundation.so:vendor/lib/libstagefright_foundation-v33_rtwo.so;FIX_SONAME
+system/system/lib64/libstagefright_foundation.so:vendor/lib64/libstagefright_foundation-v33_rtwo.so;FIX_SONAME
+vendor/lib/libdapparamstorage.so:vendor/lib/libdapparamstorage-v33_rtwo.so;FIX_SONAME
+vendor/lib/libdlbpreg.so
+vendor/lib/libspatializerparamstorage.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so:vendor/lib/vendor.dolby.hardware.dms@2.0-v33_rtwo.so;FIX_SONAME
+vendor/lib64/libdapparamstorage.so:vendor/lib64/libdapparamstorage-v33_rtwo.so;FIX_SONAME
+vendor/lib64/libdlbpreg.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so:vendor/lib64/vendor.dolby.hardware.dms@2.0-v33_rtwo.so;FIX_SONAME
 
 # DPM - from vayu
 system_ext/bin/dpmd|097a21f71912ba9a2e0d37d5ee0e62469addd0ec

@@ -24,7 +24,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 # Audio
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_DLKM := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -206,6 +206,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2023-05-01
 
 # Sepolicy
+include $(DEVICE_PATH)/sepolicy/dolby/SEPolicy.mk
 include $(DEVICE_PATH)/sepolicy/miuicamera/SEPolicy.mk
 include $(DEVICE_PATH)/sepolicy/misys/SEPolicy.mk
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk

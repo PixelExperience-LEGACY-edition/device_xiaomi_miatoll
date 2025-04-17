@@ -160,6 +160,17 @@ vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.display.vds_allow_hwc=1
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.hardware.soc.manufacturer=qcom
+ro.vendor.audio.dolby.dax.support=true
+
+# Dolby (Enable the service)
+ro.vendor.product.device.db=OP_DEVICE
+ro.vendor.product.manufacturer.db=OP_PHONE
+vendor.product.device=OP_PHONE
+vendor.product.manufacturer=OPD
+
 # DRM
 drm.service.enabled=true
 
