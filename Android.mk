@@ -106,3 +106,18 @@ $(EGL_64_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf egl/$(notdir $@) $@
 
 endif
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := RemovePackages
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_OVERRIDES_PACKAGES += \
+    talkback \
+    AndroidAutoStubPrebuilt \
+	SoundAmplifierPrebuilt \
+    YouTubeMusicPrebuilt
+
+LOCAL_UNINSTALLABLE_MODULE := true
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_SRC_FILES := /dev/null
+include $(BUILD_PREBUILT)
