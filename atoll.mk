@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
-# Circle To Search
-PRODUCT_PACKAGES += \
-    Motorola_CTS
-
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
